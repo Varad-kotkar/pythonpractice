@@ -1,0 +1,40 @@
+What you learned
+
+✅ [] vs get()
+
+✅ Why get() exists
+
+✅ keys()
+
+✅ values()
+
+✅ items()
+
+✅ in checks keys by default
+
+✅ in with .values() checks values
+
+✅ Predicting outputs before running code
+
+
+inside
+student.get("age", 18)
+
+Python reads it almost like English:
+Get "age".
+
+If not found...
+Return 18.
+
+So output is
+18
+
+
+#
+I don't know the key.
+
+I just want to remove the last inserted key-value pair.
+
+Python created another method.
+
+popitem()
