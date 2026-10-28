@@ -1,0 +1,35 @@
+"""
+DSA Pattern: Membership / Seen-Before
+Problem 1: Detect Whether a List Contains Duplicates
+
+PROBLEM:
+Given a list of integers, return True if any value appears
+more than once. Otherwise, return False.
+
+EXAMPLES:
+[4, 7, 2, 7] -> True
+[1, 2, 3, 4] -> False
+[5, 5]       -> True
+[]           -> False
+
+GOAL:
+Use a set to remember values already visited.
+Try to solve it in O(n) time with O(n) extra space.
+"""
+
+def contains_duplicate(nums):
+    seen=set()
+    for i in nums:
+        if i not in seen:
+            seen.add(i)
+        else:
+            return True
+    return False
+
+
+# TEST CASES
+print(contains_duplicate([4, 7, 2, 7]))  # Expected: True
+print(contains_duplicate([1, 2, 3, 4]))  # Expected: False
+print(contains_duplicate([5, 5]))        # Expected: True
+print(contains_duplicate([]))             # Expected: False
+print(contains_duplicate([9]))            # Expected: False
